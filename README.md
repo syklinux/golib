@@ -1,7 +1,7 @@
 # 运维开发项目组基础组件库
 > 使用go1.19及以上
-> 
-> @author: yongkang.shi@slamtec.com
+>
+> @author: 954810908@qq.com
 >
 > @time: 2021-08-21
 
