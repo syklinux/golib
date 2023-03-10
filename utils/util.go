@@ -526,3 +526,13 @@ func getMapInterface(tempMap map[string]interface{}, key string) interface{} {
 	}
 	return nil
 }
+
+func UTCTransLocal(utcTime string) string {
+	t, _ := time.Parse("2006-01-02T15:04:05.000+08:00", utcTime)
+	return t.Local().Format("2006-01-02 15:04:05")
+}
+
+func LocalTransUTC(localTime string) string {
+	t, _ := time.ParseInLocation("2006-01-02 15:04:05", localTime, time.Local)
+	return t.UTC().Format("2006-01-02T15:04:05.000+08:00")
+}
